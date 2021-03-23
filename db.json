@@ -210,18 +210,6 @@
         "filename": "20210305-132545-240x492.mp4"
       }
     ],
-    "comment_details": [
-      {
-        "creator_details": {
-          "id": 78874,
-          "name": "Abhishek goyal",
-          "phone": "9988821242",
-          "email": "abhishek.goyal_EXT@acko.tech"
-        },
-        "created_on": "2021-03-11T08:51:56.551Z",
-        "type": "REVIEWER",
-        "value": "approved"
-      }
-    ]
+    "comment_details": []
   }
 }
