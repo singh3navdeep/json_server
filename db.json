@@ -212,15 +212,15 @@
     ],
     "comment_details": [
       {
-        creatorDetails: {
-          id: 78874,
-          name: "Abhishek goyal",
-          phone: "9988821242",
-          email: "abhishek.goyal_EXT@acko.tech"
+        "creator_details": {
+          "id": 78874,
+          "name": "Abhishek goyal",
+          "phone": "9988821242",
+          "email": "abhishek.goyal_EXT@acko.tech"
         },
-        createdOn: "2021-03-11T08:51:56.551Z",
-        type: "REVIEWER",
-        value: "approved"
+        "created_on": "2021-03-11T08:51:56.551Z",
+        "type": "REVIEWER",
+        "value": "approved"
       }
     ]
   }
