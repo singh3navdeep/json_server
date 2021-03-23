@@ -1,0 +1,227 @@
+{
+  "config": {
+    "title": "Check Admissibility",
+    "sub_title": "",
+    "style": {
+      "position": "grid/stack"
+    },
+    "left_widgets": [
+      [
+        {
+          "title": "Checklist",
+          "sub_title": "",
+          "widget_id": "checklist",
+          "fields": [
+            {
+              "title": "Credit Score",
+              "sub_title": "",
+              "widget_id": "checklistRow",
+              "data_type": "json",
+              "id": "creditScoreDetails",
+              "fyi": true,
+              "default": {
+                "value_1": "NA",
+                "value_2": "NA",
+                "value_3": "NA",
+                "icon": ""
+              }
+            },
+            {
+              "title": "Location",
+              "sub_title": "",
+              "widget_id": "checklistRow",
+              "data_type": "json",
+              "id": "locationDetails",
+              "fyi": true,
+              "default": {
+                "value_1": "NA",
+                "value_2": "NA",
+                "value_3": "NA",
+                "icon": ""
+              }
+            },
+            {
+              "title": "Policy Period",
+              "sub_title": "",
+              "widget_id": "checklistRow",
+              "data_type": "json",
+              "id": "policyPeriodDetails",
+              "fyi": true,
+              "default": "NA"
+            },
+            {
+              "title": "Informant",
+              "sub_title": "",
+              "widget_id": "checklistRow",
+              "data_type": "json",
+              "id": "informantDetails",
+              "fyi": true,
+              "default": {
+                "value_1": "NA",
+                "value_2": "NA",
+                "value_3": "NA",
+                "icon": ""
+              }
+            },
+            {
+              "title": "Plan Activation",
+              "sub_title": "",
+              "placeholder": "",
+              "widget_id": "checklistRow",
+              "data_type": "json",
+              "id": "planActivationDetails",
+              "fyi": true,
+              "default": {
+                "value_1": "NA",
+                "value_2": "NA",
+                "value_3": "NA",
+                "icon": ""
+              }
+            }
+          ]
+        }
+      ]
+    ],
+    "right_widgets": [
+      [
+        {
+          "title": "ACS Amount",
+          "sub_title": "",
+          "placeholder": "Enter Claim Amount",
+          "tag": {
+            "text": "",
+            "id": ""
+          },
+          "id": "acsAmount",
+          "widget_id": "amount",
+          "data_type": "float",
+          "style": "liabilityAmountStyle",
+          "fyi": true,
+          "default": "NA"
+        }
+      ],
+      [
+        {
+          "title": "Review Documents",
+          "sub_title": "",
+          "widget_id": "documents",
+          "data_type": "list",
+          "style": "reviewDocumentStyle",
+          "id": "documentDetails",
+          "fyi": false,
+          "default": [
+            
+          ],
+          "is_actionable": false,
+          "show_request_document": true,
+          "is_uploadable": false
+        }
+      ],
+      [
+        {
+          "title": "Comments",
+          "sub_title": "",
+          "tag": "",
+          "id": "commentDetails",
+          "widget_id": "comments",
+          "widget_type": "list",
+          "style": "commentStyle",
+          "fyi": false,
+          "default": [
+            
+          ],
+          "is_actionable": true
+        }
+      ]
+    ],
+    "action_details": [
+      {
+        "button_type": "rejectButton",
+        "display_name": "Reject",
+        "event": "reject",
+        "action": "REJECTED",
+        "pop_up": {
+          "show": true,
+          "type": "reject",
+          "fields": {
+            "comments": {
+              "id": "commentDetails"
+            }
+          }
+        }
+      },
+      {
+        "button_type": "approveButton",
+        "display_name": "Approve",
+        "event": "approve",
+        "action": "APPROVED",
+        "pop_up": {
+          "show": true,
+          "type": "approve",
+          "fields": {
+            "amount": {
+              "id": "acsAmount"
+            },
+            "comments": {
+              "id": "comments"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "credit_score_details": {
+      "value2": "NA",
+      "isValidated": false
+    },
+    "location_details": {
+      "value1": "IP: NA",
+      "value3": "Entered Pincode: 835 High St #20, Ottawa, ON K2B 6C3, Canada",
+      "isValidated": true
+    },
+    "policy_period_details": {
+      "value1": "Incident Date: 9 March, 21",
+      "value3": "Validity: 4 January, 21 - 3 January, 22",
+      "isValidated": true
+    },
+    "informant_details": {
+      "value1": "POLICY_HOLDER_REPRESENTATIVE",
+      "value2": "FALSE",
+      "isValidated": false
+    },
+    "plan_activation_details": {
+      "value1": "Manual",
+      "value3": "No",
+      "isValidated": true
+    },
+    "acs_amount": 2000,
+    "document_details": [
+      {
+        "document_id": "04d3d9b1-ed55-46af-b1b4-7b9206254c42",
+        "state": "REJECTED",
+        "type": "DAMAGE_VIDEO",
+        "name": "Damage Video",
+        "url": "https://dev-acko-test.s3.ap-south-1.amazonaws.com/partnership-documents/CLAIM/UXVOXVGLIU/20210305-132545-240x492.mp4",
+        "created_on": "2021-03-09T01:04:43.177+05:30",
+        "comment": "Video not clear",
+        "page_id": "04d3d9b1-ed55-46af-b1b4-7b9206254c42_1",
+        "page_number": 1,
+        "filename": "20210305-132545-240x492.mp4"
+      }
+    ],
+    "comment_details": [
+      {
+        creatorDetails: {
+          id: 78874,
+          name: "Abhishek goyal",
+          phone: "9988821242",
+          email: "abhishek.goyal_EXT@acko.tech"
+        },
+        createdOn: "2021-03-11T08:51:56.551Z",
+        type: "REVIEWER",
+        value: "approved"
+      }
+    ]
+  }
+}
