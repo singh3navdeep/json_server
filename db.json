@@ -113,7 +113,7 @@
             
           ],
           "is_actionable": false,
-          "show_request_document": true,
+          "show_request_document": false,
           "is_uploadable": false
         }
       ],
