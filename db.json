@@ -30,9 +30,21 @@
           "placeholder": "Enter Claim Amount",
           "tag": {
             "text": "Full and Final",
-            "id": ""
+            "id": "chipLightBlue"
           },
-          "id": "claimAmount",
+          "id": "acsAmount",
+          "widget_id": "amount",
+          "data_type": "float",
+          "style": "liabilityAmountStyle",
+          "fyi": true,
+          "default": "NA"
+        },
+        {
+          "title": "Liability Amount",
+          "sub_title": "",
+          "placeholder": "Enter Claim Amount",
+          "tag": {"id": "chipLightBlue", "text": "Full And Final"},
+          "id": "liabilityAmount",
           "widget_id": "amount",
           "data_type": "float",
           "style": "liabilityAmountStyle",
@@ -119,6 +131,7 @@
         "value": "qwert"
       }
     ],
-    "claim_amount": 2000
+    "acs_amount": 2000,
+    "liability_amount": 3000
   }
 }
