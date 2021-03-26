@@ -43,7 +43,7 @@
           "title": "Liability Amount",
           "sub_title": "",
           "placeholder": "Enter Claim Amount",
-          "tag": {"id": "chipLightBlue", "text": "Full And Final"},
+          "tag": {"id": "chipLightBlue", "text": ""},
           "id": "liabilityAmount",
           "widget_id": "amount",
           "data_type": "float",
