@@ -89,7 +89,7 @@
           "sub_title": "",
           "placeholder": "Enter Claim Amount",
           "tag": {
-            "text": "Full and final",
+            "text": "",
             "id": ""
           },
           "id": "acsAmount",
