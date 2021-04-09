@@ -85,18 +85,18 @@
     "right_widgets": [
       [
         {
-          "title": "ACS Amount",
+          "title": "Assesement Amount",
           "sub_title": "",
           "placeholder": "Enter Claim Amount",
           "tag": {
             "text": "",
             "id": ""
           },
-          "id": "acsAmount",
+          "id": "assesmentAmount",
           "widget_id": "amount",
           "data_type": "float",
           "style": "liabilityAmountStyle",
-          "fyi": true,
+          "fyi": false,
           "default": "NA"
         },
         {
@@ -107,11 +107,11 @@
             "text": "",
             "id": ""
           },
-          "id": "liabilityAmount",
+          "id": "maxLiabilityAmount",
           "widget_id": "amount",
           "data_type": "float",
           "style": "liabilityAmountStyle",
-          "fyi": true,
+          "fyi": false,
           "default": "NA"
         }
       ],
