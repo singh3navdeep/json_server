@@ -92,7 +92,7 @@
             "text": "",
             "id": ""
           },
-          "id": "assesmentAmount",
+          "id": "assessmentAmount",
           "widget_id": "amount",
           "data_type": "float",
           "style": "liabilityAmountStyle",
