@@ -96,7 +96,7 @@
           "widget_id": "amount",
           "data_type": "float",
           "style": "liabilityAmountStyle",
-          "fyi": false,
+          "fyi": true,
           "default": "NA"
         },
         {
@@ -210,7 +210,7 @@
       "value3": "No",
       "isValidated": true
     },
-    "acs_amount": 2000,
+    "assessment_amount": 2000,
     "liability_amount": 3000,
     "document_details": [
       {
