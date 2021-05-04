@@ -1,243 +1,893 @@
-{
-  "config": {
-    "title": "Check Admissibility",
-    "sub_title": "",
-    "style": {
-      "position": "grid/stack"
-    },
-    "left_widgets": [
-      [
-        {
-          "title": "Checklist",
-          "sub_title": "",
-          "widget_id": "checklist",
-          "fields": [
-            {
-              "title": "Credit Score",
-              "sub_title": "",
-              "widget_id": "checklistRow",
-              "data_type": "json",
-              "id": "creditScoreDetails",
-              "fyi": true,
-              "default": {
-                "value_1": "NA",
-                "value_2": "NA",
-                "value_3": "NA",
-                "icon": ""
-              }
-            },
-            {
-              "title": "Location",
-              "sub_title": "",
-              "widget_id": "checklistRow",
-              "data_type": "json",
-              "id": "locationDetails",
-              "fyi": true,
-              "default": {
-                "value_1": "NA",
-                "value_2": "NA",
-                "value_3": "NA",
-                "icon": ""
-              }
-            },
-            {
-              "title": "Policy Period",
-              "sub_title": "",
-              "widget_id": "checklistRow",
-              "data_type": "json",
-              "id": "policyPeriodDetails",
-              "fyi": true,
-              "default": "NA"
-            },
-            {
-              "title": "Informant",
-              "sub_title": "",
-              "widget_id": "checklistRow",
-              "data_type": "json",
-              "id": "informantDetails",
-              "fyi": true,
-              "default": {
-                "value_1": "NA",
-                "value_2": "NA",
-                "value_3": "NA",
-                "icon": ""
-              }
-            },
-            {
-              "title": "Plan Activation",
-              "sub_title": "",
-              "placeholder": "",
-              "widget_id": "checklistRow",
-              "data_type": "json",
-              "id": "planActivationDetails",
-              "fyi": true,
-              "default": {
-                "value_1": "NA",
-                "value_2": "NA",
-                "value_3": "NA",
-                "icon": ""
-              }
-            }
-          ]
-        }
-      ]
-    ],
-    "right_widgets": [
-      [
-        {
-          "title": "Assesement Amount",
-          "sub_title": "",
-          "placeholder": "Enter Claim Amount",
-          "tag": {
-            "text": "",
-            "id": ""
-          },
-          "id": "assessmentAmount",
-          "widget_id": "amount",
-          "data_type": "float",
-          "style": "liabilityAmountStyle",
-          "fyi": true,
-          "default": "NA"
-        },
-        {
-          "title": "Max Liability Amount",
-          "sub_title": "",
-          "placeholder": "Enter Claim Amount",
-          "tag": {
-            "text": "",
-            "id": ""
-          },
-          "id": "maxLiabilityAmount",
-          "widget_id": "amount",
-          "data_type": "float",
-          "style": "liabilityAmountStyle",
-          "fyi": false,
-          "default": "NA"
-        }
-      ],
-      [
-        {
-          "title": "Review Documents",
-          "sub_title": "",
-          "widget_id": "documents",
-          "data_type": "list",
-          "style": "reviewDocumentStyle",
-          "id": "documentDetails",
-          "fyi": false,
-          "default": [
-
-          ],
-          "is_actionable": false,
-          "show_request_document": true,
-          "is_uploadable": false
-        }
-      ],
-      [
-        {
-          "title": "Comments",
-          "sub_title": "",
-          "tag": "",
-          "id": "commentDetails",
-          "widget_id": "comments",
-          "widget_type": "list",
-          "style": "commentStyle",
-          "fyi": false,
-          "default": [
-
-          ],
-          "is_actionable": true
-        }
-      ]
-    ],
-    "action_details": [
-      {
-        "button_type": "rejectButton",
-        "display_name": "Reject",
-        "event": "reject",
-        "action": "REJECTED",
-        "pop_up": {
-          "show": true,
-          "type": "reject",
-          "fields": {
-            "comments": {
-              "id": "commentDetails"
-            }
-          }
-        }
-      },
-      {
-        "button_type": "approveButton",
-        "display_name": "Approve",
-        "event": "approve",
-        "action": "APPROVED",
-        "pop_up": {
-          "show": true,
-          "type": "approve",
-          "fields": {
-            "amount": {
-              "id": "acsAmount"
-            },
-            "comments": {
-              "id": "comments"
-            }
-          }
-        }
-      }
-    ]
+[
+  {
+  "id": 93,
+  "name": "Microsoft",
+  "is_active": true,
+  "address": "hsr",
+  "contact_number": "9999999999",
+  "email": "asdasd@aa.aa",
+  "intermediary_type": "pos/Web Aggregator"
   },
-  "data": {
-    "credit_score_details": {
-      "value2": "NA",
-      "isValidated": false
-    },
-    "location_details": {
-      "value1": "IP: NA",
-      "value3": "Entered Pincode: 835 High St #20, Ottawa, ON K2B 6C3, Canada",
-      "isValidated": true
-    },
-    "policy_period_details": {
-      "value1": "Incident Date: 9 March, 21",
-      "value3": "Validity: 4 January, 21 - 3 January, 22",
-      "isValidated": true
-    },
-    "informant_details": {
-      "value1": "POLICY_HOLDER_REPRESENTATIVE",
-      "value2": "FALSE",
-      "isValidated": false
-    },
-    "plan_activation_details": {
-      "value1": "Manual",
-      "value3": "No",
-      "isValidated": true
-    },
-    "assessment_amount": 2000,
-    "liability_amount": 3000,
-    "document_details": [
-      {
-        "document_id": "04d3d9b1-ed55-46af-b1b4-7b9206254c42",
-        "state": "REJECTED",
-        "type": "DAMAGE_VIDEO",
-        "name": "Damage Video",
-        "url": "https://dev-acko-test.s3.ap-south-1.amazonaws.com/partnership-documents/CLAIM/UXVOXVGLIU/20210305-132545-240x492.mp4",
-        "created_on": "2021-03-09T01:04:43.177+05:30",
-        "comment": "Video not clear",
-        "page_id": "04d3d9b1-ed55-46af-b1b4-7b9206254c42_1",
-        "page_number": 1,
-        "filename": "20210305-132545-240x492.mp4"
-      }
-    ],
-    "comment_details": [
-      {
-        "creatorDetails": {
-          "id": 78874,
-          "name": "Abhishek goyal",
-          "phone": "9988821242",
-          "email": "abhishek.goyal_EXT@acko.tech"
-        },
-        "createdOn": "2021-03-11T08:51:56.551Z",
-        "type": "REVIEWER",
-        "value": "approved"
-      }
-    ]
+  {
+  "id": 94,
+  "name": "partner_test",
+  "is_active": true,
+  "address": "address",
+  "contact_number": "1234567345678",
+  "email": "e@e.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 95,
+  "name": "",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 96,
+  "name": "Ackop",
+  "is_active": true,
+  "address": "bangalore",
+  "contact_number": "9920731991",
+  "email": "akhil@acko.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 97,
+  "name": "xyz",
+  "is_active": true,
+  "address": "UP",
+  "contact_number": "123",
+  "email": "ak@gmail.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 98,
+  "name": "swiggy",
+  "is_active": true,
+  "address": "ABC",
+  "contact_number": "9878787878",
+  "email": "abc@gmail.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 99,
+  "name": "Intel",
+  "is_active": true,
+  "address": "asdasd",
+  "contact_number": "9920731991",
+  "email": "akhil@acko.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 100,
+  "name": "OLA_GMC",
+  "is_active": true,
+  "address": "mumbai",
+  "contact_number": "31312121",
+  "email": "sdsd@qqeqe.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 101,
+  "name": "abc",
+  "is_active": true,
+  "address": "abc",
+  "contact_number": "9887654321",
+  "email": "asd@acko.tech",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 102,
+  "name": "new_test",
+  "is_active": true,
+  "address": "UP",
+  "contact_number": "12343241",
+  "email": "ak@gmail.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 103,
+  "name": "Latest",
+  "is_active": true,
+  "address": "asdf",
+  "contact_number": "1234",
+  "email": "123",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 104,
+  "name": "uber_gmc",
+  "is_active": true,
+  "address": "pune",
+  "contact_number": "9087654321",
+  "email": "sass@fxfx.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 105,
+  "name": "L1",
+  "is_active": true,
+  "address": "UP",
+  "contact_number": "8423234521",
+  "email": "a916@gmail.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 88,
+  "name": "swiggy_gmc_test",
+  "is_active": true,
+  "address": "ABC",
+  "contact_number": "9111111111",
+  "email": "abc@gmail.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 89,
+  "name": "gmc_acko",
+  "is_active": true,
+  "address": "hsr",
+  "contact_number": "123456789",
+  "email": "gmc@acko.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 90,
+  "name": "gmc_company1",
+  "is_active": true,
+  "address": "hsr",
+  "contact_number": "1234567890",
+  "email": "gmc@email.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 91,
+  "name": "company2",
+  "is_active": true,
+  "address": "hsr",
+  "contact_number": "123456789",
+  "email": "a@a.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 92,
+  "name": "gmc_company2",
+  "is_active": true,
+  "address": "hsr",
+  "contact_number": "1234567890",
+  "email": "m@m.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 106,
+  "name": "Acko_test",
+  "is_active": true,
+  "address": "Banglore",
+  "contact_number": "9898989898",
+  "email": "asda@acko.tech",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 107,
+  "name": "avc",
+  "is_active": true,
+  "address": "ca",
+  "contact_number": "21",
+  "email": "ca",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 108,
+  "name": "new_one",
+  "is_active": true,
+  "address": "aasd",
+  "contact_number": "2334123123",
+  "email": "asd",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 109,
+  "name": "PartnerTest1",
+  "is_active": true,
+  "address": "abc",
+  "contact_number": "41242345235",
+  "email": "ffwe@fwe.ewgwe",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 111,
+  "name": "acko-temp",
+  "is_active": true,
+  "address": "ABC",
+  "contact_number": "9878787878",
+  "email": "abc@gmail.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 112,
+  "name": "Acko_v2",
+  "is_active": true,
+  "address": "asdas",
+  "contact_number": "9920731991",
+  "email": "akhil@acko.com",
+  "intermediary_type": "pos/Web Aggregator"
+  },
+  {
+  "id": 113,
+  "name": "test_1",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 114,
+  "name": "Swiggy_test1",
+  "is_active": true,
+  "address": "HSR",
+  "contact_number": "7974103509",
+  "email": "test1@swiggy.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 115,
+  "name": "test_2",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 116,
+  "name": "Testing123",
+  "is_active": true,
+  "address": "Meerut",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 117,
+  "name": "hskdhfdksfjoifjijdlkjfdlkfjldfjlfjlkfjlkdjl",
+  "is_active": true,
+  "address": "720, 3rd floor, 15th A main road, HSR sector 3",
+  "contact_number": "8867826568",
+  "email": "khandelwal.rahul185@gmail.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 118,
+  "name": "testing123",
+  "is_active": true,
+  "address": "CSEHOI I ojo aof",
+  "contact_number": "7974103509",
+  "email": "a@a.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 119,
+  "name": "Ethical",
+  "is_active": true,
+  "address": "Meerut",
+  "contact_number": "9999999999",
+  "email": "abc123@gmail.co",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 120,
+  "name": "asdas",
+  "is_active": true,
+  "address": "adas",
+  "contact_number": "99990099999",
+  "email": "asda",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 121,
+  "name": "test0123",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 122,
+  "name": "testing1234",
+  "is_active": true,
+  "address": "adress",
+  "contact_number": "123456765432",
+  "email": "m@m.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 123,
+  "name": "testPartner",
+  "is_active": true,
+  "address": "address",
+  "contact_number": "1234561234",
+  "email": "m@m.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 124,
+  "name": "Partner_1",
+  "is_active": true,
+  "address": "Sion",
+  "contact_number": "9876543210",
+  "email": "test@test.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 125,
+  "name": "MyTestPartner",
+  "is_active": true,
+  "address": "AAAA",
+  "contact_number": "9999999999",
+  "email": "dhananjay@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 126,
+  "name": "test company",
+  "is_active": true,
+  "address": "abc",
+  "contact_number": "1234567890",
+  "email": "test@test.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 127,
+  "name": "TTT@123",
+  "is_active": true,
+  "address": "cc",
+  "contact_number": "123121321231",
+  "email": "ad@gmail.nn",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 128,
+  "name": "test1234partner",
+  "is_active": true,
+  "address": "abc",
+  "contact_number": "1234567890",
+  "email": "test@test.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 129,
+  "name": "asdgg",
+  "is_active": true,
+  "address": "asd",
+  "contact_number": "2341231231",
+  "email": "ad@gmail.nn",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 130,
+  "name": "sadadadsadasdadadads",
+  "is_active": true,
+  "address": "dasadsads",
+  "contact_number": "12344567890",
+  "email": "dhananjay@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 131,
+  "name": "asdadadadadad",
+  "is_active": true,
+  "address": "Koramangala",
+  "contact_number": "9650287135",
+  "email": "dhananjay@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 140,
+  "name": "jsjdjas",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 141,
+  "name": "New partmer",
+  "is_active": true,
+  "address": "jhh",
+  "contact_number": "9090909",
+  "email": "Akskda",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 142,
+  "name": "New partner",
+  "is_active": true,
+  "address": "asdasda",
+  "contact_number": "9920731991",
+  "email": "Akhil",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 143,
+  "name": "Internet-Aditya",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 144,
+  "name": "Aditya Test",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 145,
+  "name": "InternetAdityaTest",
+  "is_active": true,
+  "address": "",
+  "contact_number": "7895928293",
+  "email": "aditya.agarwal@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 146,
+  "name": "ParasTest",
+  "is_active": true,
+  "address": "",
+  "contact_number": "9999999999",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 147,
+  "name": "Kelly",
+  "is_active": true,
+  "address": "asdas",
+  "contact_number": "9920731991",
+  "email": "akhil@acko.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 148,
+  "name": "Kelly Services India Private Limited",
+  "is_active": true,
+  "address": "Unit No 601 602 603 6th Floor Tower-C Unitech Cyber Park Sector-3",
+  "contact_number": "7980459346",
+  "email": "mehul.kedia@acko.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 149,
+  "name": "Kelly GMC",
+  "is_active": true,
+  "address": "asdas",
+  "contact_number": "9920731991",
+  "email": "asda",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 150,
+  "name": "Dunzo",
+  "is_active": true,
+  "address": "HSR Layout",
+  "contact_number": "9805168167",
+  "email": "abhishek.bhushan_ext@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 151,
+  "name": "Razorpay Software Pvt Ltd",
+  "is_active": true,
+  "address": "asad",
+  "contact_number": "9920731991",
+  "email": "sneha.yadav@acko.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 152,
+  "name": "March12test1",
+  "is_active": true,
+  "address": "March12test1",
+  "contact_number": "9394931212",
+  "email": "nivedhitha+testmarch12@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 153,
+  "name": "Test1",
+  "is_active": true,
+  "address": "abcd",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 154,
+  "name": "Netskope Software India Private Limited",
+  "is_active": true,
+  "address": "10th Floor, Prestige Trinity Centre, Doddakannelli, Kaadubeesanahalli Road, Bogahahalli Village, Varthur",
+  "contact_number": "9035510485",
+  "email": "sgoel@netskope.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 155,
+  "name": "Ugam Solutions Pvt. Ltd",
+  "is_active": true,
+  "address": "Prism Tower, B-Wing, 6th floor, Goregaon(W), - 400062",
+  "contact_number": "9920731991",
+  "email": "akhil@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 156,
+  "name": "Ugam Solutions SEZ Pvt. Ltd",
+  "is_active": true,
+  "address": "KGISL Tech Park, Block A, SEZ - Keeranatham Rd, Saravanampatti,Tamil Nadu 641035",
+  "contact_number": "9920731991",
+  "email": "akhil@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 157,
+  "name": "O3 Capital Global Advisory Private Limited",
+  "is_active": true,
+  "address": "O3 Capital Global Advisory Private Limited Ground, First Floor, No. 5, Crescent Road, High Grounds, Bangalore, Bangaluru(Bangalore) Urban",
+  "contact_number": "9920731991",
+  "email": "akhil@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 158,
+  "name": "Nuance Transcription Services India Private",
+  "is_active": true,
+  "address": "First Floor, N0 437/170,Block B,, Salarpuria Aura, Sy No.15/2 and Sy No.14/P7,, Kadubesanahalli, Bengaluru (Bangalore) Urban",
+  "contact_number": "9920731991",
+  "email": "akhil@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 159,
+  "name": "Seq test",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 160,
+  "name": "Sequence Gen",
+  "is_active": true,
+  "address": "",
+  "contact_number": "7974103509",
+  "email": "sourabh.majumdar_int+o@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 161,
+  "name": "Test 345",
+  "is_active": true,
+  "address": "asas",
+  "contact_number": "9930959903",
+  "email": "pratik.chinchole@acko.tech",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 162,
+  "name": "Miscrosoft LLC",
+  "is_active": true,
+  "address": "adress",
+  "contact_number": "1234567890",
+  "email": "m@m.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 163,
+  "name": "Acko PVT",
+  "is_active": true,
+  "address": "address",
+  "contact_number": "1234567890",
+  "email": "m@m.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 164,
+  "name": "Company",
+  "is_active": true,
+  "address": "address",
+  "contact_number": "1234567890",
+  "email": "m@m.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 165,
+  "name": "a_t",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 166,
+  "name": "ddddddd",
+  "is_active": true,
+  "address": "sdfsd",
+  "contact_number": "9898989890",
+  "email": "demo@devias.io",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 167,
+  "name": "rishav",
+  "is_active": true,
+  "address": "skdjcn",
+  "contact_number": "1212121212",
+  "email": "fsjnkjfdnv@gmail.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 168,
+  "name": "company",
+  "is_active": true,
+  "address": "address",
+  "contact_number": "1234567890",
+  "email": "m@m.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 198,
+  "name": "The Embassy of France",
+  "is_active": true,
+  "address": "2/50 E Shantipath - ChanakyaPuri",
+  "contact_number": "9033510485",
+  "email": "vandanna.takoor@diplomatie.gouv.fr",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 169,
+  "name": "Zomato",
+  "is_active": true,
+  "address": "xyz",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 170,
+  "name": "Zoom",
+  "is_active": true,
+  "address": "ab",
+  "contact_number": "6123123123",
+  "email": "zoom@zoom.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 171,
+  "name": "test k",
+  "is_active": true,
+  "address": "abc",
+  "contact_number": "6213718212",
+  "email": "abc@abc.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 172,
+  "name": "testComp",
+  "is_active": true,
+  "address": "address",
+  "contact_number": "12344567890",
+  "email": "m@m.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 173,
+  "name": "testZoom",
+  "is_active": true,
+  "address": "add",
+  "contact_number": "6123123123",
+  "email": "a@a.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 174,
+  "name": "Testing Zoom new",
+  "is_active": true,
+  "address": "add",
+  "contact_number": "6123123123",
+  "email": "a@a.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 175,
+  "name": "test",
+  "is_active": true,
+  "address": "add",
+  "contact_number": "6123123123",
+  "email": "em@em.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 176,
+  "name": "kk ab",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 177,
+  "name": "zzzz abc",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 178,
+  "name": "ztest sourabh",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 179,
+  "name": "zz s a s ",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 180,
+  "name": "zz sourabh prashant test",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 181,
+  "name": "zqa test",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 182,
+  "name": "zqa2 test",
+  "is_active": true,
+  "address": "",
+  "contact_number": "",
+  "email": "",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 184,
+  "name": "abc_123",
+  "is_active": true,
+  "address": "skmcd",
+  "contact_number": "12323232323",
+  "email": "sdlkcm",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 110,
+  "name": "Acko",
+  "is_active": true,
+  "address": "ABC",
+  "contact_number": "9878787878",
+  "email": "abc@gmail.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 185,
+  "name": "Partner UW demo",
+  "is_active": true,
+  "address": "9, 17th A Main Rd, Near Sukh Sagar Restaurant, 5th Block, Koramangala",
+  "contact_number": "7878759070",
+  "email": "sanket.ims@gmail.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 186,
+  "name": "April30Test1",
+  "is_active": true,
+  "address": "April30Test1",
+  "contact_number": "8870401260",
+  "email": "april30test1@acko.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 187,
+  "name": "Grofers Pvt Ltd [Dummy]",
+  "is_active": true,
+  "address": "Gurgaon",
+  "contact_number": "9999999999",
+  "email": "grofers@grofers.com",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 188,
+  "name": "ss",
+  "is_active": true,
+  "address": "mnsm",
+  "contact_number": "7015204731",
+  "email": "mnm",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 189,
+  "name": "asd",
+  "is_active": true,
+  "address": "asd",
+  "contact_number": "8318519871",
+  "email": "asda",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 191,
+  "name": "gfghh",
+  "is_active": true,
+  "address": "dfgh",
+  "contact_number": "9711243231",
+  "email": "gf",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 192,
+  "name": "ad",
+  "is_active": true,
+  "address": "asd",
+  "contact_number": "8318519871",
+  "email": "asd",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 193,
+  "name": "sdas",
+  "is_active": true,
+  "address": "aa",
+  "contact_number": "8318519871",
+  "email": "asdadsa",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 196,
+  "name": "fg",
+  "is_active": true,
+  "address": "edf",
+  "contact_number": "9711252162",
+  "email": "gf",
+  "intermediary_type": "Web Aggregator"
+  },
+  {
+  "id": 197,
+  "name": "jk",
+  "is_active": true,
+  "address": "es",
+  "contact_number": "1112223334",
+  "email": "rdf",
+  "intermediary_type": "Web Aggregator"
   }
-}
+  ]
