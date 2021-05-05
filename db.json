@@ -92,5 +92,197 @@
     "is_active": true,
     "version": "1.0.0"
     }
+    ],
+  "groups": [
+    {
+    "name": "amazon",
+    "display_name": "Amazon Covid Protect",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Amazon_jan_2021.svg"
+    },
+    {
+    "name": "cred",
+    "display_name": "Cred Home Protect",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Cred_jan_2021.svg"
+    },
+    {
+    "name": "abhibus",
+    "display_name": "Abhibus Rides",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Abhibus_jan_2021.svg"
+    },
+    {
+    "name": "driveu",
+    "display_name": "DriveU Rides",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/DriveU_jan_2021.svg"
+    },
+    {
+    "name": "rapido",
+    "display_name": "Rapido Rides",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Rapido_jan_2021.svg"
+    },
+    {
+    "name": "urbanclap",
+    "display_name": "UC Pro+ Protection",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/UrbanClap_jan_2021.svg"
+    },
+    {
+    "name": "happay",
+    "display_name": "Happay Flights",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Happay_jan_2021.svg"
+    },
+    {
+    "name": "redbus",
+    "display_name": "Redbus Trips",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Redbus_new.svg"
+    },
+    {
+    "name": "indifi",
+    "display_name": "Indifi Loan Insurance",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Indifi_jan_2021.svg"
+    },
+    {
+    "name": "zomato",
+    "display_name": "Zomato Driver Protection",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Zomato_jan_2021.svg"
+    },
+    {
+    "name": "swiggy",
+    "display_name": "Swiggy DE Protection",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Swiggy_jan_2021.svg"
+    },
+    {
+    "name": "micelio",
+    "display_name": "Lightning Driver Protection",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/gigDefault.svg"
+    },
+    {
+    "name": "au_bank",
+    "display_name": "AU Bank Loan Secure Shield",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/AUBank_jan_2021.svg"
+    },
+    {
+    "name": "zoomcar",
+    "display_name": "Zoomcar Car Rental",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Zoomcar_jan_2021.svg"
+    },
+    {
+    "name": "zestmoney",
+    "display_name": "Zestmoney Loans",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Zestmoney_new.svg"
+    },
+    {
+    "name": "lendingkart",
+    "display_name": "Lendingkart Loans",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/LendinKart_jan_2021.svg"
+    },
+    {
+    "name": "ambit",
+    "display_name": "Ambit Loans",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/LendingKart_new.svg"
+    },
+    {
+    "name": "oyo",
+    "display_name": "OYO Stays",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Oyo_jan_2021.svg"
+    },
+    {
+    "name": "practo",
+    "display_name": "Practo+ Subscription",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Practo_jan_2021.svg"
+    },
+    {
+    "name": "mmt",
+    "display_name": "MMT Trips",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/MMT_jan_2021.svg"
+    },
+    {
+    "name": "dmi",
+    "display_name": "DMI Loans",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/DMI_app.png"
+    },
+    {
+    "name": "happyness",
+    "display_name": "Happyness Hospicash",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Happay_jan_2021.svg"
+    },
+    {
+    "name": "hdb",
+    "display_name": "HDB Assets",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/HDFC_jan_2021.svg"
+    },
+    {
+    "name": "dunzo",
+    "display_name": "Dunzo Rides",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Dunzo_jan_2021.svg"
+    },
+    {
+    "name": "goibibo",
+    "display_name": "Goibibo Travels",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Goibibo_jan_2021.svg"
+    },
+    {
+    "name": "emt",
+    "display_name": "EaseMyTrip Travels",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/EaseMyTrip_jan_2021.svg"
+    },
+    {
+    "name": "travelcover",
+    "display_name": "TravelCover Travels",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/travelDefault.svg"
+    },
+    {
+    "name": "shadowfax",
+    "display_name": "Shadowfax Driver Protection",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/shadowfax_app.jpg"
+    },
+    {
+    "name": "goniyo",
+    "display_name": "GoNiyo Insurance",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Niyo_new.svg"
+    },
+    {
+    "name": "moneytap",
+    "display_name": "MoneyTap Loans",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/MoneyTap_new.svg"
+    },
+    {
+    "name": "kreditbee",
+    "display_name": "Kreditbee Insurance",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/KreditBee_jan_2021.svg"
+    },
+    {
+    "name": "ola_flight_insurance",
+    "display_name": "Ola Flight Insurance",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Ola_jan_2021.svg"
+    },
+    {
+    "name": "ola",
+    "display_name": "OLA Trips",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Ola_jan_2021.svg"
+    },
+    {
+    "name": "pinbox",
+    "display_name": "Pinbox Pension Protect",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/pinboxicon.png"
+    },
+    {
+    "name": "grab",
+    "display_name": "Grab Driver Protection",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/Grab_feb_2021.svg"
+    },
+    {
+    "name": "jubilant",
+    "display_name": "Jubilant Business Associate Protection",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/gigDefault.svg"
+    },
+    {
+    "name": "ugro",
+    "display_name": "Ugro Loans",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/loanDefault.svg"
+    },
+    {
+    "name": "mahindra",
+    "display_name": "Mahindra",
+    "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/travelDefault.svg"
+    }
     ]
 }
