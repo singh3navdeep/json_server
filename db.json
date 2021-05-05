@@ -77,6 +77,14 @@
   ],
   "enabled_plans": [
     {
+      "id": "PlanTest1_Product3_1606998656793",
+      "name": "PlanTest1",
+      "data": "data",
+      "covers": "covers",
+      "is_active": true,
+      "version": "1.0.0"
+      },
+    {
     "id": "PlanTest2_Product3_1606998656793",
     "name": "PlanTest2",
     "data": "data",
