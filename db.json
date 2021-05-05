@@ -27,5 +27,387 @@
     "email": "",
     "intermediary_type": "pos/Web Aggregator"
     }
-    ]
+    ],
+  "plans": [
+    
+{
+  "id": "abcdefhsk",
+  "name": "abcdefhsk",
+  "type": "enterprise",
+  "partner": "swiggy",
+  "master_policy_number": "asdasdadasd",
+  "construct": "floater",
+  "start_date": "2021-02-25",
+  "end_date": "2021-02-25",
+  "meta_data": {
+  "attributes": [
+  {
+  "name": "Sum Insured",
+  "id": "sum_insured",
+  "datatype": "ArrayList",
+  "attributes": [
+  {
+  "name": "SI Value",
+  "id": "si_value",
+  "datatype": "BigDecimal"
+  },
+  {
+  "name": "Beneficiary",
+  "id": "beneficiary",
+  "datatype": "String"
+  },
+  {
+  "name": "Type",
+  "id": "type",
+  "datatype": "String"
+  },
+  {
+  "name": "Sublimit",
+  "id": "sub_limit",
+  "datatype": "BigDecimal"
+  },
+  {
+  "name": "Sublimit beneficiary",
+  "id": "sub_limit_beneficiary",
+  "datatype": "String"
+  },
+  {
+  "name": "Addon Premium",
+  "id": "addon_premium",
+  "datatype": "BigDecimal"
+  }
+  ]
+  },
+  {
+  "name": "Waiting Period",
+  "id": "waiting_period",
+  "datatype": "ArrayList",
+  "attributes": [
+  {
+  "name": "Initial waiting period",
+  "id": "initial_waiting_period",
+  "datatype": "String"
+  },
+  {
+  "name": "Pre existing diseases waiting period",
+  "id": "pre_existing_diseases_waiting_period",
+  "datatype": "String"
+  },
+  {
+  "name": "Specific illness waiting period",
+  "id": "specific_illness_waiting_period",
+  "datatype": "String"
+  },
+  {
+  "name": "Maternity waiting period",
+  "id": "maternity_waiting_period",
+  "datatype": "String"
+  }
+  ]
+  },
+  {
+  "name": "Premium",
+  "id": "premium",
+  "datatype": "BigDecimal"
+  },
+  {
+  "name": "Copay Clause",
+  "id": "copay_clause",
+  "datatype": "Percent"
+  },
+  {
+  "name": "Deductible",
+  "id": "deductible",
+  "datatype": "BigDecimal"
+  }
+  ]
+  },
+  "data": {
+  "attributes": [
+  {
+  "id": "sum_insured",
+  "attributes": [
+  {
+  "id": "si_value"
+  },
+  {
+  "id": "beneficiary"
+  },
+  {
+  "id": "type"
+  },
+  {
+  "id": "sub_limit"
+  },
+  {
+  "id": "sub_limit_beneficiary"
+  },
+  {
+  "id": "addon_premium"
+  }
+  ]
+  },
+  {
+  "id": "waiting_period",
+  "attributes": [
+  {
+  "id": "initial_waiting_period"
+  },
+  {
+  "id": "pre_existing_diseases_waiting_period"
+  },
+  {
+  "id": "specific_illness_waiting_period"
+  },
+  {
+  "id": "maternity_waiting_period"
+  }
+  ]
+  },
+  {
+  "id": "premium"
+  },
+  {
+  "id": "copay_clause"
+  },
+  {
+  "id": "deductible"
+  }
+  ],
+  "permissions": {
+  "administrator": [
+  "view_policy"
+  ],
+  "insured": [
+  "view_policy",
+  "raise_claim"
+  ],
+  "dependent": [
+  "view_policy",
+  "raise_claim"
+  ],
+  "proposer": [
+  "view_policy",
+  "receive_renewal_notification",
+  "edit_member",
+  "add_addons"
+  ],
+  "nominee": [
+  "raise_claim",
+  "view_policy"
+  ]
+  },
+  "policy_nature": "Named",
+  "payment_frequency": "Annual",
+  "family_type": "E",
+  "policy_prefix": "SWI",
+  "policy_type": "self",
+  "members_allowed": {
+  "employee": {
+  "min_age": 20,
+  "max_age": 45
+  },
+  "spouse": {},
+  "children": {},
+  "parents": {},
+  "max_dependent_count": 0
+  }
+  },
+  "covers": [
+  {
+  "id": "opd_diagnostics",
+  "name": "Doctor visit or consultation",
+  "data": {
+  "description": "Doctor visit or consultations",
+  "custom_attribute": "primary",
+  "attributes": [
+  {
+  "id": "coverage_amount"
+  },
+  {
+  "id": "waiting_period"
+  },
+  {
+  "id": "start_date"
+  },
+  {
+  "id": "end_date"
+  },
+  {
+  "id": "copay"
+  },
+  {
+  "id": "beneficiary"
+  },
+  {
+  "id": "additional_conditions"
+  },
+  {
+  "id": "description"
+  },
+  {
+  "id": "peril"
+  },
+  {
+  "id": "damage"
+  },
+  {
+  "id": "per_claim_limit"
+  },
+  {
+  "id": "covered_treatments"
+  },
+  {
+  "id": "sublimit"
+  },
+  {
+  "id": "no_of_claims_allowed"
+  }
+  ]
+  },
+  "metadata": {
+  "attributes": [
+  {
+  "name": "Coverage Amount",
+  "id": "coverage_amount",
+  "datatype": "String"
+  },
+  {
+  "name": "Waiting Period (in days)",
+  "id": "waiting_period",
+  "datatype": "BigDecimal"
+  },
+  {
+  "name": "Start Date",
+  "id": "start_date",
+  "datatype": "String"
+  },
+  {
+  "name": "End Date",
+  "id": "end_date",
+  "datatype": "String"
+  },
+  {
+  "name": "Co Pay",
+  "id": "copay",
+  "datatype": "String"
+  },
+  {
+  "name": "Beneficiary",
+  "id": "beneficiary",
+  "datatype": "MultiSelect",
+  "options": [
+  "E",
+  "S",
+  "C",
+  "P/PIL"
+  ]
+  },
+  {
+  "name": "Additional Conditions",
+  "id": "additional_conditions",
+  "datatype": "Text"
+  },
+  {
+  "name": "Description",
+  "id": "description",
+  "datatype": "Text"
+  },
+  {
+  "name": "Peril",
+  "id": "peril",
+  "datatype": "MultiSelect",
+  "options": [
+  "teleconsult"
+  ]
+  },
+  {
+  "name": "Damage",
+  "id": "damage",
+  "datatype": "MultiSelect",
+  "options": [
+  "opd_doctor_consultations",
+  "opd_diagnostics"
+  ]
+  },
+  {
+  "name": "Per Claim Limit",
+  "id": "per_claim_limit",
+  "datatype": "String"
+  },
+  {
+  "name": "Covered Treatments",
+  "id": "covered_treatments",
+  "datatype": "String"
+  },
+  {
+  "name": "Sublimit",
+  "id": "sublimit",
+  "datatype": "String"
+  },
+  {
+  "name": "No of Claims allowed",
+  "id": "no_of_claims_allowed",
+  "datatype": "Integer"
+  },
+  {
+  "name": "Cover type",
+  "id": "cover_type",
+  "datatype": "Select",
+  "options": [
+  "indemnity",
+  "fixed"
+  ]
+  },
+  {
+  "name": "Benefit type",
+  "id": "benefit_type",
+  "datatype": "Select",
+  "options": [
+  "bundled",
+  "addon"
+  ]
+  },
+  {
+  "name": "Addon",
+  "id": "addon",
+  "datatype": "MultiList",
+  "attributes": [
+  {
+  "name": "Pricing",
+  "id": "pricing",
+  "datatype": "ArrayList",
+  "attributes": [
+  {
+  "name": "Enhancement",
+  "id": "enhancement",
+  "datatype": "String"
+  },
+  {
+  "name": "Beneficiary",
+  "id": "beneficiary",
+  "datatype": "String"
+  },
+  {
+  "name": "Addon Premium",
+  "id": "addon_premium",
+  "datatype": "BigDecimal"
+  },
+  {
+  "name": "Description",
+  "id": "description",
+  "datatype": "String"
+  }
+  ]
+  }
+  ]
+  }
+  ]
+  }
+  }
+  ],
+  "is_active": true,
+  "version": "1.0.0"
+  }
+  ]
 }
