@@ -284,5 +284,26 @@
     "display_name": "Mahindra",
     "logo_url": "https://acko-public.s3.ap-south-1.amazonaws.com/partnership/logos/travelDefault.svg"
     }
+    ],
+  "presentation": {
+    "plan": "swiggy_driver",
+    "group": "swiggy",
+    "marketed_name": "$.life.start_date--FORMAT_DATE",
+    "heading": "Daily Accidental Cover",
+    "label3_id": "person",
+    "show_premium": false,
+    "show_cashless_card": true,
+    "category_labels": [
+    {
+    "id": "person",
+    "display_name": "Person Name",
+    "value": "$.life.person[0].insured.name"
+    },
+    {
+    "id": "startDate",
+    "display_name": "Start Date",
+    "value": "$.life.startDate"
+    }
     ]
+    }
 }
